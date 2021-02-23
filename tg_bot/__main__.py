@@ -26,28 +26,26 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-**Hello {}, My Name is {}!** 
-I am an **SUPERB**  group management bot.
-You can find the list of available commands with /help.
-
+Hai! {}, Namaku adalah {}! Saya adalah bot manajemen grup yang di kelola oleh [Master saya ini](tg://user?id={}).
+Anda tidak di perbolehkan menambahkan bot ini pada grub manapun tanpa seizin dari saya, Karena ini adalah bot pribadi yang di khususkan untuk grub [ISCModz Chat](t.me/iscchat)!.
+Anda dapat melihat daftar perintah yang tersedia pada bot dengan perintah /help.
+Bot ini tidak tersedia untuk publik!, apabila anda juga ingin membuat bot pribadi untuk memanajemen grub milik anda sendiri anda bisa menghubungi saya!.
 """
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Hai! Namaku *{}*.
 
-*Main* commands available:
- - /start: start the bot
- - /help: PM's you this message.
- - /help <module name>: PM's you info about that module.
+*Main* tersedia command:
+ - /start: Untuk memulai bot...
+ - /help: Menu bantuan....
  - /settings:
-   - in PM: will send you your settings for all supported modules.
-   - in a group: will redirect you to pm, with all that chat's settings.
-
+   - in PM: Untuk mengetahui PENGATURAN apa yang telah Anda tetapkan ....
+   - in a group:
 
 {}
 And the following:
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nKamu bisa menggunakan command dengan format  / atau !  untuk menggunakannya...\n")
 
 TECHNO_IMG = "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg"
 IMPORTED = {}
